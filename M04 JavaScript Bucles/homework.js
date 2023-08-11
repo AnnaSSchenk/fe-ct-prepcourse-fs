@@ -222,10 +222,15 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
-   return num >=100 && num <= 999;
+   if (num>=100 && num <= 999) {
+   return true;
+   } else {
+      return false;
+   }
 };
+let numi = tieneTresDigitos(700);
+console.log(numi)
 
-console.log(tieneTresDigitos(110));
 
 function doWhile(num) {
    // Implementar una función que aumente el valor recibido en 5 hasta un límite de 8 veces.

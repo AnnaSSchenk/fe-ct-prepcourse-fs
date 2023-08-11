@@ -18,7 +18,7 @@ function crearGato(nombre, edad) {
 };
 var MiGato = crearGato("Anna",23)
 //var edad = Gato.edad;
-console.log(MiGato.nombre)
+console.log(MiGato)
 
 function nuevoUsuario(nombre, email, password) {
    // Debes crear un nuevo objeto.
@@ -33,7 +33,7 @@ function nuevoUsuario(nombre, email, password) {
    return Nuevo;
 };
 var Mio = nuevoUsuario("Anna","asschenk","Anni");
-console.log(Mio.nombre);
+console.log(Mio);
 
 function agregarPropiedad(objeto, propiedad) {
    // Recibirás un objeto por parámetro.
@@ -112,7 +112,11 @@ function tienePropiedad(objeto, propiedad) {
    // Verifica si el objeto recibido posee una propiedad con el mismo nombre que el parámetro "propiedad".
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
-   return propiedad in objeto;
+   if (objeto.propiedad === "propiedad"){
+   return true;
+   } else {
+      return false;
+   }
 };
 var iLikeObjects = {saludo: "Hallo", name: "Anna", life: "Age"};
 var res = tienePropiedad(iLikeObjects, "Age");
@@ -135,7 +139,7 @@ function actualizarPassword(objetoUsuario, nuevaPassword) {
    // Tu código:
    
    objetoUsuario["password"] = nuevaPassword;
-   delete objetoUsuario["nuevaPassword"];
+   //delete objetoUsuario["nuevaPassword"];
    return objetoUsuario;
 };
 var myPW = {usuario: "Anna", password: "Hola"};

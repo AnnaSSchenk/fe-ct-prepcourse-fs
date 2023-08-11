@@ -205,9 +205,13 @@ function empiezaConNueve(num) {
    // Tu código:
    var numStr = num.toString ();
 
-   return numStr.charAt (0) === '9';
+   if(numStr.charAt (0) === '9'){
+      return true;
+   } else {
+      return false;
+   }
 };
-console.log(empiezaConNueve(980))
+console.log(empiezaConNueve(80))
 
 function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.
@@ -245,7 +249,7 @@ function mesesDelAño(array) {
       return "No se encontraron los meses pedidos";
    }
 };
-var mesesArray = ["Enero", "Diciembre", "Octubre", "Marzo", "Noviembre"];
+var mesesArray = ["Enero", "Diciembre", "Octubre", "h", "Noviembre"];
 var mesesEncontrados = mesesDelAño(mesesArray);
 console.log(mesesDelAño(mesesEncontrados))
 

@@ -42,9 +42,11 @@ console.log(redondearHaciaArriba(3.3))
 function numeroRandom() {
    // Genera un número al azar entre 0 y 1 y retórnalo.
    // Tu código:
-   return Math.random();
+   let Erg = Math.random();
+   return Erg;
 };
-console.log(numeroRandom)
+let Erg7 = numeroRandom(7);
+console.log(Erg7)
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

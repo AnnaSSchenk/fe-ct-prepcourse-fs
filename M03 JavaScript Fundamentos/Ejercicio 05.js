@@ -32,7 +32,7 @@ function combinarNombres(nombre, apellido) {
    // Tu código:
    return nombre + " " + apellido;
 };
-console.log(combinarNombres("Anna ","Schenk"))
+console.log(combinarNombres("Anna","Schenk"))
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
