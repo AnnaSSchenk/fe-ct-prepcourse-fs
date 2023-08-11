@@ -32,6 +32,8 @@ function numberOfCharacters(string) {
    });
    return sortedObject;
 }
+let myExample = "hdiasldk";
+console.log(numberOfCharacters(myExample))
 
 function capToFront(string) {
    // Recibes un string con algunas letras en mayúscula y otras en minúscula.
